@@ -1,0 +1,154 @@
+---
+title: "Actividad_R"
+author: "Indicar Nombre y Apellido"
+date: "2022-11-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Actividad - Programación en R
+
+
+Esta actividad evaluada consiste en una serie de ejercicios que debe responder dentro de los *chunks* o trozos de código disponibles después de cada pregunta. Recuerda incluir la carga de los paquetes necesarios para la ejecución del código.
+
+
+# Parte 1 (evaluacionR.csv)
+
+## Pregunta 1.
+
+Descargar el archivo evaluacionR.csv e importar dicha información a un dataframe identificado como **df** usando el url que se indica en el trozo de código.
+
+```{r}
+
+url="https://www.dropbox.com/s/ms29mvjj0pdq9oz/evaluacionR.csv?dl=1"
+
+
+
+
+```
+
+
+## Pregunta 2.
+
+¿Cuál es el tipo de cada una de las variables presentes en el dataframe **df**?
+
+```{r}
+
+
+
+```
+
+## Pregunta 3.
+ 
+ ¿Cuántos registros (filas) y variables (columnas) tiene el dataframe **df?**
+
+    ```{r}
+
+
+
+    ```
+
+
+## Pregunta 4.
+ 
+Agrupar el dataframe **df** por la variable **Tissue** y agregar columnas con la media de TPM, el valor máximo de TPM y el valor mínimo de TPM para cada tipo de Tissue. Almacenar el resultado en **df1**.
+
+    ```{r}
+
+
+
+    ```
+
+
+## Pregunta 5.
+ 
+Mostrar mediante un gráfico de puntos la relación entre TPM y nTPM usando el dataframe **df**.
+
+    ```{r}
+
+    
+    
+    ```
+
+
+## Pregunta 6.
+ 
+A partir de los datos de **df**, mostrar mediante un gráfico de puntos la relación entre TPM y nTPM para los registros en donde la variable Tissue sea igual a "angular gyrus (white matter)" o igual a "angular gyrus". Colorear de forma distinta dependiendo del tipo de Tissue.
+
+    ```{r}
+
+
+
+    ```
+
+
+## Pregunta 7.
+ 
+Mostrar los mismos datos de la pregunta 6 usando facet_grid para separar la información de los dos tejidos en dos gráficos colocados uno al lado del otro.
+
+```{r}
+
+
+
+```
+
+
+# Parte 2 (ncrna_NONCODE[v3.0].fasta)
+
+## Pregunta 8.
+
+Descargar el archivo ncrna_NONCODE[v3.0].fasta e importar los datos usando el paquete seqinr visto en las  prácticas de las últimas sesiones. Recuerde que el archivo se encuetra comprimido. Almacenar los datos en el objeto **ncrna**.
+
+```{r}
+url="http://noncode.org/datadownload/ncrna_NONCODE[v3.0].fasta.tar.gz"
+
+
+
+
+```
+
+## Pregunta 9.
+
+Revisar las funciones disponibles del paquete seqinr. Indicar qué función se puede utilizar para ver el listado y una breve descripción de las funciones incluidas en el paquete.
+
+```{r}
+
+
+
+```
+
+## Pregunta 10.
+
+Extraer en un objeto **secuencia** todas las secuencias del objeto **ncrna** usando la función **getSequence** de seqinr. ¿de qué tipo es el objeto **secuencia**? 
+
+```{r}
+
+
+```
+
+## Pregunta 11.
+
+Extraer  las secuencias que empiezan con "acct". ¿Cuántas secuencias cumplen con la condición?
+
+```{r}
+
+
+
+```
+
+
+## Pregunta 12.
+
+Extraer las secuencias que terminan con "tttttt". ¿Cuántas secuencias cumplen con la condición?
+
+```{r}
+
+
+
+```
+
+
+
